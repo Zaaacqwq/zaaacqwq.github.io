@@ -1,8 +1,62 @@
-# React + Vite
+# Zaaacqwq's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This portfolio is a showcase of my projects and skills, featuring interactive visual elements built with Three.js, particles.js, and custom canvas animations. It's built using Vite and React, designed to be deployed on GitHub Pages.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Three.js Visualizations**: Interactive 3D elements that enhance the visual experience.
+- **Particles.js Effects**: Dynamic particle systems for background effects.
+- **Responsive Design**: Ensures the portfolio looks great on devices of all sizes.
+- **Single Page Application**: Smooth navigation without page reloads.
+
+## Local Development
+
+Follow these steps to set up the project locally:
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/Zaaacqwq/zaaacqwq.github.io.git
+   cd zaaacqwq.github.io
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**
+
+   ```bash
+   npm run dev
+   ```
+
+   Access the application at `http://localhost:3000`.
+
+## Building and Deploying
+
+To build the project and prepare it for deployment:
+
+```bash
+npm run build
+```
+
+Deploy to GitHub Pages:
+
+```bash
+npm run deploy
+```
+
+## Acknowledgments
+
+- **Canvas Classes**: The `canvasClass.js` and `canvasClass.d.ts` are adapted from [Ark-Particle-Imitate](https://github.com/QingXia-Ela/Ark-Particle-Imitate), used under MIT License.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Author
+
+- **Zaacqwq**
+- [GitHub](https://github.com/Zaaacqwq)
