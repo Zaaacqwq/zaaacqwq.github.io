@@ -1,0 +1,188 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* Prevent scrollbars from appearing */
+}
+
+#home-container,
+#intro-container,
+#effect-container,
+#comment-container,
+#threejs-container,
+#ak-container,
+#circle-navigation-container,
+#particlesjs-container,
+#content-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#threejs-canvas,
+#ak-canvas,
+#circle-navigation-canvas,
+#particlesjs-canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#threejs-container {
+    z-index: 0;
+}
+
+#ak-container {
+    z-index: 5;
+}
+
+#circle-navigation-container {
+    z-index: 2;
+    /* Ensure it's above other elements */
+}
+
+#particlesjs-container {
+    right: -100%;
+    transform: translateX(100%);
+    transition: transform 1.5s ease-in-out;
+
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 0;
+}
+
+canvas {
+    cursor: url(/image/mouse.png) 0 0, pointer;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    z-index: 10;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#home-container {
+    /* right: -100%; */
+    transform: translateX(0%);
+    transition: transform 1.5s ease-in-out;
+
+    z-index: 1;
+}
+
+#intro-container {
+    top: -30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 1;
+}
+
+#intro {}
+
+#effect-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 1;
+}
+
+#effect-first {}
+
+#effect-second span {
+    color: #BD53ED;
+    position: relative;
+}
+
+#effect-second span::before {
+    content: "";
+    height: 30px;
+    width: 2px;
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    background: #BD53ED;
+    transform: translateY(-45%);
+    animation: blink 0.7s infinite;
+}
+
+#effect-second span.stop-blinking::before {
+    animation: none;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0
+    }
+}
+
+#comment-container {
+    top: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 1;
+}
+
+#comment {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+}
+
+#content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    right: -100%;
+    transform: translateX(100%);
+    transition: transform 1.5s ease-in-out;
+
+    z-index: 10;
+}
+
+#react-root {
+    position: absolute;
+    width: 50%;
+    height: 75%;
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, .2);
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-right: 2px solid rgba(255, 255, 255, .2);
+    border-bottom: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(5px);
+}
